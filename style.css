@@ -1,0 +1,280 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: 'Impact', 'Arial Black', sans-serif; 
+  background: #0a0a0a; 
+  color: #e0e0e0; 
+  line-height: 1.6; 
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0a0a0a;
+  padding: 40px 20px;
+  text-align: center;
+  transition: padding 0.3s ease, background 0.3s ease;
+}
+
+.topbar.shrink {
+  padding: 10px 20px;
+  background: #111;
+}
+
+.author-name {
+  font-size: 4rem;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.topbar.shrink .author-name {
+  font-size: 2rem;
+  transform: translateX(-20px);
+  text-align: left;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff6f60;
+}
+
+
+/* Hero Section */
+.hero { background: linear-gradient(to right, #1b1b1b, #2e2e2e), url('military-bg.jpg') center/cover no-repeat;
+   color: #f5f5f5; 
+   text-align: center; 
+   padding: 80px 20px; 
+   border-bottom: 6px solid #2e7d32; 
+   text-shadow: 2px 2px 6px rgba(0,0,0,0.8); 
+  }
+
+.hero h1 { 
+  font-size: 3.5rem; 
+  letter-spacing: 3px; 
+  text-transform: uppercase; 
+}
+
+.hero p { font-size: 1.5rem; 
+  font-style: italic; 
+  max-width: 700px; 
+  margin: 0 auto; 
+  color: #cfd8dc; 
+}
+
+.newsletter {
+  background: #245c28;
+  padding: 60px 40px;
+  text-align: center;
+  color: white;
+}
+
+.newsletter h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.night {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.newsletter button {
+  padding: 14px 40px;
+  background: #c62828;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background: #121212;
+  border-left: 5px solid #2e7d32;
+}
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+  border: 4px solid #d32f2f;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+.bio h2 { 
+  margin-bottom: 15px; 
+  color: #81c784; 
+  text-transform: uppercase; 
+}
+
+/* Books Showcase */
+.books {
+  padding: 50px;
+  background: #1c1c1c;
+}
+.books h2 { 
+  color: #ffeb3b; 
+  margin-bottom: 25px; 
+  text-transform: uppercase; 
+}
+.book-grid {
+  display: flex;
+  gap: 25px;
+}
+.book-card {
+  flex: 1;
+  background: #212121;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #2e7d32;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+}
+.book-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.book-card h3 {
+  color: #e53935;
+  margin-bottom: 10px;
+}
+.book-card p {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+}
+
+.expect {
+  padding: 60px;
+  background: #121212;
+  color: #f5f5f5;
+  text-align: center;
+  border-left: 5px solid #2e7d32;
+}
+
+.expect h2 {
+  margin-bottom: 30px;
+  color: #ffeb3b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.expect-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.expect-card {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #2e7d32;
+  width: 30%;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Reviews Section*/
+
+.reviews {
+  padding: 60px;
+  background: #1c1c1c;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.reviews h2 {
+  margin-bottom: 30px;
+  color: #ffeb3b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.review-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.review-card {
+  background: #212121;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #2e7d32;
+  width: 30%;
+  font-style: italic;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  color: #81c784;
+  font-size: 0.9rem;
+}
+
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 50px;
+  background: #2e7d32;
+  color: white;
+  border-top: 6px solid #d32f2f;
+}
+.contact h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact button {
+  padding: 14px 30px;
+  background: #d32f2f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.contact button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
