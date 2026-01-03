@@ -40,8 +40,15 @@
 <section id="newsletter" class="newsletter">
   <h2>Get a Free Sample of Night Talon</h2>
   <p>Join my newsletter for updates, release alerts, and exclusive content.</p>
-  <h2 class="night">Night Talon</h2>
-  <button id="contactBtn">Sign Up & Read the Sample</button>
+  <form
+  action="https://buttondown.com/api/emails/embed-subscribe/belt"
+  method="post"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+</form>
 </section>
 
 

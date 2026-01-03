@@ -152,6 +152,61 @@ body {
   transform: scale(1.05);
 }
 
+/* Newsletter subscription styling*/
+
+/* Newsletter Form */
+.embeddable-buttondown-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Label */
+.embeddable-buttondown-form label {
+  color: #cfe8f5; /* soft frost blue */
+  font-size: 0.9rem;
+}
+
+/* Email Input */
+.embeddable-buttondown-form input[type="email"] {
+  padding: 10px 14px;
+  width: 260px;
+  border: 2px solid #8fb3c9; /* your light blue */
+  border-radius: 4px;
+  background: #0d1a20; /* your dark arctic base */
+  color: #e0f4ff;
+  transition: 0.3s ease;
+}
+
+.embeddable-buttondown-form input[type="email"]:focus {
+  outline: none;
+  border-color: #cfe8f5;
+}
+
+/* Subscribe Button */
+.embeddable-buttondown-form input[type="submit"] {
+  padding: 10px 20px;
+  background: #5a4632; /* military brown */
+  border: 2px solid #5a4632;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.embeddable-buttondown-form input[type="submit"]:hover {
+  background: #8fb3c9; /* icy hover */
+  border-color: #8fb3c9;
+  color: #0d0d0d;
+}
+
+/* Hide Buttondown branding (optional) */
+.embeddable-buttondown-form p {
+  display: none;
+}
 
 
 /* Profile Section */
