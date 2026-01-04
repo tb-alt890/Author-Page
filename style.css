@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 85px; /* match topbar height */
 }
 
 body { 
@@ -16,6 +17,11 @@ body {
 }
 
 @media (max-width: 800px) {
+
+  html {
+    scroll-padding-top: 100px;
+  }
+
   .profile {
     flex-direction: column;
     text-align: center;
@@ -47,7 +53,7 @@ body {
 .topbar.shrink {
   padding: 10px 40px;
   background: linear-gradient(to right, #1b1b1b, #2e2e2e);
-  border-bottom: 4px solid #81c784;
+  border-bottom: 4px solid #531414;
 }
 
 .author-name {
@@ -96,6 +102,13 @@ body {
   color: #e0e0e0; 
 }
 
+.hero-sub {
+  color: #cfe8f5;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
 .hero h1 { 
   font-size: 3.5rem; 
   letter-spacing: 3px; 
@@ -128,6 +141,13 @@ body {
   max-width: 600px; 
   margin: 0 auto 25px; 
   line-height: 1.6;
+}
+
+.newsletter-note {
+  font-size: 0.8rem;
+  color: #9bb3bd; /* soft frost blue-grey */
+  margin-top: 20px;
+  opacity: 0.8;
 }
 
 .night {
@@ -345,7 +365,7 @@ body {
   background: #212121;
   padding: 25px;
   border-radius: 10px;
-  border: 2px solid #2e7d32;
+  border: 2px solid #531414;
   width: 30%;
   font-style: italic;
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
@@ -363,9 +383,9 @@ body {
 .contact {
   text-align: center;
   padding: 50px;
-  background: #2e7d32;
+  background: #193e1d;
   color: white;
-  border-top: 6px solid #d32f2f;
+  border-top: 6px solid #531414;
 }
 .contact h2 {
   margin-bottom: 20px;
