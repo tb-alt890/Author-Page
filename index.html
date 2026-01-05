@@ -6,12 +6,17 @@
   <link rel="icon" type="image/png" href="tbfavicon1.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- TOPBAR -->
 <header class="topbar">
-  <h1 class="author-name">Trevor Belt</h1>
+  <div class="brand">
+    <img src="tbfavicon1.png" alt="Author Photo" class="top-pic">
+    <h1 class="topbar-name">Trevor Belt</h1>
+  </div>
+
   <nav class="nav">
     <a href="#books">Books</a>
     <a href="#about">About</a>
@@ -20,10 +25,22 @@
   </nav>
 </header>
 
+
 <!-- HERO SECTION (Tagline only) -->
 <section class="hero">
-  <h2 class="tagline">Stay connected with exclusive updates and early looks at what’s coming next.</h2>
-  <h2 class="hero-sub">Thanks for visiting</h2>
+  <div class="hero-content">
+    <h1 class="tagline">Stories that feel cinematic and immersive.</h1>
+    <!-- <section class="hero"><p class="sub-tagline"></p> -->
+  </div>
+</section>
+
+
+<section class="cta-hero">
+  <h2>Get an early look at <span>Night Talon</span> with an exclusive free sample.</h2>
+  <button class="cta-button" onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })">
+    Download Free Sample
+  </button>
+<p>Join early readers who get exclusive stories and a monthly look behind the scenes.</p>
 </section>
 
 
@@ -33,25 +50,36 @@
   <div class="bio">
     <h2>About the Author</h2>
     <p>Trevor Belt is an author out of Michigan. He is known for writing cinematic, suspenseful plots weaving captivating storytelling with unforgettable characters. Trevor's aspiration for being a writer stems from his childhood in which he recalls creating many stories that he wished to share with the world.</p>
-    <p>Trevor is an avid reader- he likes to spend his free time diving into classic literature and other works of interest to him. He cites some of his favorite authors to be J.R.R Tolkien, Cormac McCarthy, Drew Karpyshyn, and Francis F.S. Fitzgerald to name a few. In his time outside of literature, Trevor is a computer programmer who enjoys spending his freetime building new programs and applications.</p>
+    <p>Trevor is an avid reader—he likes to spend his free time diving into classic literature and other works of interest to him. He cites some of his favorite authors to be J.R.R Tolkien, Cormac McCarthy, Drew Karpyshyn, and Francis F.S. Fitzgerald to name a few. In his time outside of literature, Trevor is a computer programmer who enjoys spending his freetime building new programs and applications.</p>
   </div>
 </section>
 
 <!-- NEWSLETTER SECTION -->
 <section id="newsletter" class="newsletter">
-  <h2>Get a Free Sample of Night Talon</h2>
-  <p>Join my newsletter for updates, release alerts, and exclusive content.</p>
+  <h2>Get Your Free Sample</h2>
+  <p>Enter your email to receive an early look at Night Talon instantly.</p>
+
   <form
-  action="https://buttondown.com/api/emails/embed-subscribe/belt"
-  method="post"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Enter your email</label>
-  <input type="email" name="email" id="bd-email" />
-  <input type="submit" value="Subscribe" />
-</form>
-  <p class="newsletter-note">Unsubscribe at any time</p>
+    action="https://buttondown.com/api/emails/embed-subscribe/belt"
+    method="post"
+    class="newsletter-form"
+  >
+    <div class="input-group">
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+      <button type="submit">Send My Sample</button>
+    </div>
+  </form>
+
+  <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+
+   <ul class="newsletter-benefits">
+     <li> Instant access to a sample scene</li> 
+     <li> Exclusive short stories and bonus content</li> 
+     <li> Behind‑the‑scenes updates on the writing process</li> 
+     <li> Release alerts and future novels</li>
+  </ul>
 </section>
+
 
 
 <!-- BOOKS SECTION -->
